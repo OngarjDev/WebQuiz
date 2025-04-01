@@ -1,0 +1,144 @@
+@import url('http://fonts.googleapis.com/css?family=Arvo:700|Open+Sans:400italic,400');
+@import url('http://fast.fonts.com/cssapi/95b765fd-fae4-4f1b-8155-d8244914a5c6.css');
+
+body {
+    margin: 0;
+    padding: 0;
+
+    display: grid;
+    place-items: center;
+
+    background-image: url('/images/metaverse.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+    font-family: Open Sans, Frutiger, Arial, sans-serif;
+}
+
+h1, h2 {
+    font-family: Adelle W01 Bold, Arvo, Georgia, serif;
+}
+
+h2{
+    font-size: 2.5em;
+    color: #dd3b2a;
+}
+
+a{
+    text-decoration: none;
+    color: #dd3b2a;
+    text-weight: bold;
+}
+
+.header > .content,
+.main > .content,
+.supporting > .content,
+.summary > .content{
+    width: 80%;
+    margin: auto;
+}
+
+.header {
+    height: 492px;
+    backgorund-color: rgba(255, 255, 255, 0);
+    opacity : 1;
+}
+
+.header > .content > h1{
+    font-size: 5em;
+    text-align: center;
+    color: white;
+}
+
+.header > .content > p{
+    font-size: 1.3em;
+    width: 83%; /* ถูกแก้ จากโจทย์เดืม 5.8 ข้อ b*/
+    font-weight: bold;
+    color: white;
+    margin-left: 40%; /* ถูกแก้ จากโจทย์เดืม 5.8 ข้อ b*/
+    text-shadow: 0 0 5px #000;
+}
+
+.main {
+    background-color: rgba(255, 255, 255, 0.7);
+    border-top: 5px solid #dd3b2a;
+    /* margin-bottom: 20px; จากโจทย์ข้อที่ 5.4 ทดสอบ */
+}
+
+.main > .content {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.main > .content > .definition, 
+.main > .content > .howitwork{
+    width: 75%; /*ขนาดไม่ตรงกับโจทย์ข้อ 5.10 a*/
+    padding: 20px;
+}
+
+.supporting {
+    background-color: #edf6ff;
+    border-top: 5px solid #cce4fb;
+    /* margin-bottom: 20px; จากโจทย์ข้อที่ 5.4 ทดสอบ */
+}
+
+.supporting > .content {
+    display: grid;
+    grid-template-rows: auto auto;
+}
+
+.supporting > .content > .whoplayer{
+    background-image: url('/images/conference.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    width: 45%;
+    padding: 20px;
+    padding-right: 40%; /* จัดเพื่อความสวยงาม ตามข้อ 5.15*/
+}
+
+.supporting > .content > .willhappen{
+    background-image: url('/images/avatar.png');
+    background-repeat: no-repeat;
+    background-position: left;
+    width: 45%;
+    padding: 20px;
+    padding-left: 50%; /* จัดเพื่อความสวยงาม ตามข้อ 5.15*/
+}
+
+.summary {
+    background-color: rgba(255, 255, 255, 0.7);
+    border-top: 5px solid #cce4fb;
+    /* margin-bottom: 20px; จากโจทย์ข้อที่ 5.4 ทดสอบ */
+}
+
+.summary > .content > div.whydothis{
+    display: grid;
+    grid-template-columns: 45% 45%;
+    jutify-content: space-between;
+    padding: 20px;
+    grid-gap: 0px;
+}
+
+div.whydothis h2 {
+    text-align: center;
+    grid-column: span 2;
+    display: grid;
+}
+
+div.whydothis h3 {
+    grid-column: span 2;
+    text-align: left;
+}
+
+div.whydothis p:first-of-type{
+    grid-column: 1
+}
+
+div.whydothis p:last-of-type{
+    grid-column: 2;
+    padding-left: 50px; /* จัดเพื่อความสวยงาม ตามข้อ 5.15*/
+}
+
+
+
